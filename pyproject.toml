@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "envia"
-version = "0.0.0"
+version = "0.0.1"
 description = "Manage your app configuration using env variables"
 readme = "README.md"
 requires-python=">=3.7"

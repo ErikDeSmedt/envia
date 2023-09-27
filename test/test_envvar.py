@@ -40,3 +40,12 @@ def test_missing_environment_variable():
 
         with pytest.raises(MissingEnvironmentVariable):
             v2.require()
+
+
+def test_require_returns_self():
+    os_vars = {"APP_VAR_01": "value"}
+
+    with mock.patch.dict(os.environ, os_vars):
+        app_var_01 = EnvVar("APP_VAR_01").require()
+
+        assert isinstance(app_var_01, EnvVar)

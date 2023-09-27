@@ -1,5 +1,7 @@
 """ Utilities to define enviornment variables
 """
+from __future__ import annotations
+
 import os
 import typing as t
 
@@ -23,5 +25,6 @@ class EnvVar:
             raise MissingEnvironmentVariable(self._name)
         return value
 
-    def require(self):
-        return self.get_required()
+    def require(self) -> EnvVar:
+        _ = self.get_required()
+        return self
