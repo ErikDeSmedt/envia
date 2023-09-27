@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "envia"
+version = "0.0.0"
+description = "Manage your app configuration using env variables"
+readme = "README.md"
+requires-python=">=3.7"
+license = {text = "MIT License"}
+authors = [
+  { name = "Erik De Smedt", email = "contact@erikdesmedt.be"},
+]
+maintainers = [
+  { name = "Erik De Smedt", email = "contact@erikdesmedt.be"}
+]
+
+keywords = ["config", "env"]
+
+[project.urls]
+Repository = "https://github.com/ErikDeSmedt/envia"
